@@ -4,6 +4,7 @@ import { HomeScreenComponent } from './home-screen/home-screen.component';
 
 const routes: Routes = [
   { path: '', component: HomeScreenComponent },
+  { path: 'contact', loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule) },
   { path: 'portfolio', loadChildren: () => import('./portfolio/portfolio.module').then(m => m.PortfolioModule) },
   { path: '**', component: HomeScreenComponent }, 
 ];

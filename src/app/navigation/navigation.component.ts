@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { Router } from '@angular/router';
 import { faSquare, faCircle } from '@fortawesome/free-regular-svg-icons';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import { NavigationService } from '../navigation.service';
 
 @Component({
   selector: 'peblet-navigation',
@@ -16,15 +16,15 @@ export class NavigationComponent {
   public faCircle = faCircle;
 
   constructor(
-    private readonly router: Router,
+    private readonly navigationService: NavigationService,
   ) { }
 
   public back(): void {
-
+    this.navigationService.back();
   }
 
   public home(): void {
-    this.router.navigate(['/']);
+    this.navigationService.home();
   }
 
   public apps(): void {

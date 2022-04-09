@@ -18,4 +18,21 @@
     url('../assets/bg.jpg');
     background-position: center;
     background-size: cover;
+    border-left: 8px solid black;
+    border-right: 8px solid black;
+    border-bottom: 8px solid black;
+    border-top: 24px solid black;
 }
+
+.peblet:before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 10px;
+  }
