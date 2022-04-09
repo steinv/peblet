@@ -9,7 +9,11 @@ export class NavigationService {
   constructor(private router: Router, private location: Location) {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
-        this.history.push(event.urlAfterRedirects)
+        if(event.urlAfterRedirects === '/') {
+          this.history = [];
+        } else {
+          this.history.push(event.urlAfterRedirects);
+        }
       }
     })
   }
