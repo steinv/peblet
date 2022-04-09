@@ -13,11 +13,15 @@
     background-clip: content-box;
 }
 
-.peblet {
+.peblet.home-active {
     background: linear-gradient(to bottom, rgba(175, 175, 175, 0.4), rgba(175, 175, 175, 0.4)),
     url('../assets/bg.jpg');
     background-position: center;
     background-size: cover;
+}
+
+.peblet {
+    background: white;
     border-left: 8px solid black;
     border-right: 8px solid black;
     border-bottom: 8px solid black;

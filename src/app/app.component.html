@@ -1,4 +1,7 @@
-<div class="peblet drop-shadow-xl flex flex-col relative bg-cover bg-center self-center mx-auto w-96 h-5/6 rounded-lg">
+<div
+  class="peblet drop-shadow-xl flex flex-col relative bg-cover bg-center self-center mx-auto w-96 h-5/6 rounded-lg"
+  [class.home-active]="router.isActive('/', true)"   
+>
   <peblet-status-bar></peblet-status-bar>  
   <router-outlet></router-outlet>
   <peblet-navigation></peblet-navigation>
