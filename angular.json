@@ -15,7 +15,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "peblet",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
