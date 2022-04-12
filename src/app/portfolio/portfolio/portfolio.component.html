@@ -1,1 +1,9 @@
-<p>portfolio works!</p>
+
+<div class="divide-y divide-slate-100">
+    <peblet-portfolio-list-item *ngFor="let project of projects"
+        [image]="project.image" 
+        [name]="project.name" 
+        [technology]="project.technology">
+    </peblet-portfolio-list-item>
+
+</div>

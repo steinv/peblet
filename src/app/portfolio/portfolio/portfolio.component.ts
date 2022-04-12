@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import projects from '../projects.json';
 
 @Component({
   selector: 'peblet-portfolio',
   templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.scss']
+  styleUrls: ['./portfolio.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class PortfolioComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class PortfolioComponent {
+  public projects = projects;
 }

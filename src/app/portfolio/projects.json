@@ -1,0 +1,46 @@
+[
+    {
+        "image": "../../assets/peblet.png",
+        "name": "Peblet",
+        "technology": [
+            "Angular Website",
+            "Tailwind css"
+        ]
+    },
+    {
+        "image": "../../assets/logo-infans.png",
+        "name": "Infans",
+        "technology": [
+            "Angular Website",
+            "Materialize css",
+            "Firebase",
+            "Twilio",
+            "Cloud functions"
+        ]
+    },
+    {
+        "image": "../../assets/myenergi.png",
+        "name": "myenergi-app",
+        "technology": [
+            "Angular",
+            "Java",
+            "Spring boot",
+            "Heroku",
+            "Netlify"
+        ]
+    },
+    {
+        "image": "../../assets/npm.png",
+        "name": "steinv/ngx-dialog",
+        "technology": [
+            "Npm Angular library"
+        ]
+    },
+    {
+        "image": "../../assets/npm.png",
+        "name": "steinv/filippine",
+        "technology": [
+            "Npm Angular library"
+        ]
+    }
+]

@@ -1,0 +1,16 @@
+<article class="p-4 flex flex-row">
+    <img [src]="image" [alt]="name" class="w-12 h-fit" loading="lazy" />
+    <div class="flex flex-col ml-4">
+        <h3 class="font-semibold text-slate-900 truncate">{{name}}</h3>
+        <p class="text-slate-400">
+            <ng-template ngFor let-tech [ngForOf]="technology" let-last="last">
+                {{tech}}
+                <svg *ngIf="!last" width="4" height="4" fill="currentColor" class="inline-block mx-2"
+                    aria-hidden="true">
+                    <circle cx="2" cy="2" r="2" />
+                </svg>
+            </ng-template>
+        </p>
+        <ng-content></ng-content>
+    </div>
+</article>
