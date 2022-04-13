@@ -20,13 +20,14 @@
     },
     {
         "image": "../../assets/myenergi.png",
-        "name": "myenergi-app",
+        "name": "alternative myenergi-app",
         "technology": [
             "Angular",
             "Java",
             "Spring boot",
             "Heroku",
-            "Netlify"
+            "Netlify",
+            "Cloud scheduler"
         ]
     },
     {
