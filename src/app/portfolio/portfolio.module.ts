@@ -6,7 +6,7 @@ import { PortfolioListItemComponent } from './portfolio-list-item/portfolio-list
 
 const routes: Routes = [
   { path: '', component: PortfolioComponent },
-  // { path: '/:project', component: PortfolioComponent },
+  { path: ':project', component: PortfolioComponent },
 ]
 
 @NgModule({
