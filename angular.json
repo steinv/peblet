@@ -109,5 +109,8 @@
       }
     }
   },
-  "defaultProject": "peblet"
+  "defaultProject": "peblet",
+  "cli": {
+    "analytics": "a079a071-3bee-428c-a40e-720c9fc44816"
+  }
 }
