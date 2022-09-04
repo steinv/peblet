@@ -5,7 +5,10 @@
         "technology": [
             "Angular Website",
             "Tailwind css"
-        ]
+        ],
+        "description": "Angular website for Peblet BV to provide contact details and demonstrate portfolio.",
+        "website": "https://peblet.be",
+        "source": "https://github.com/steinv/peblet"
     },
     {
         "image": "../../assets/logo-infans.png",
@@ -16,7 +19,9 @@
             "Firebase",
             "Twilio",
             "Cloud functions"
-        ]
+        ],
+        "description": "Angular website for Infans midwifery. Providing professional services and managing internal business-flows.",
+        "website": "https://infans.be"
     },
     {
         "image": "../../assets/myenergi.png",
@@ -24,24 +29,33 @@
         "technology": [
             "Angular",
             "Java",
-            "Spring boot",
-            "Heroku",
+            "Spring Native",
+            "Render",
             "Netlify",
             "Cloud scheduler"
-        ]
+        ],
+        "description": "Angular + Spring Native application to monitor electricity usage through a Zappi installation.",
+        "website": "https://www.npmjs.com/package/@steinv/filippine",
+        "source": "https://github.com/steinv/filippine"
     },
     {
         "image": "../../assets/npm.png",
         "name": "steinv/ngx-dialog",
         "technology": [
             "Npm Angular library"
-        ]
+        ],
+        "description": "Angular library to easily create dialogs with the possibility to provide input and output",
+        "website": "https://www.npmjs.com/package/@steinv/ngx-dialog",
+        "source": "https://github.com/steinv/ngx-dialog"
     },
     {
         "image": "../../assets/npm.png",
         "name": "steinv/filippine",
         "technology": [
             "Npm Angular library"
-        ]
+        ],
+        "description": "Angular library to  generate a filippine puzzle game",
+        "website": "https://www.npmjs.com/package/@steinv/filippine",
+        "source": "https://github.com/steinv/filippine"
     }
 ]
