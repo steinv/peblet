@@ -21,4 +21,7 @@ export interface Project {
     "image": string,
     "name": string
     "technology": string[],
+    "description": string,
+    "website": string,
+    "source"?: string
 }
