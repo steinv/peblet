@@ -22,6 +22,6 @@ export interface Project {
     "name": string
     "technology": string[],
     "description": string,
-    "website": string,
+    "website"?: string,
     "source"?: string
 }
