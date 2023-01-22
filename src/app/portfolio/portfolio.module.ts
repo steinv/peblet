@@ -25,4 +25,4 @@ const routes: Routes = [
     ProjecResolver
   ]
 })
-export class PortfolioModule { }
+export default class PortfolioModule { }

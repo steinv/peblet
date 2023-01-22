@@ -18,4 +18,4 @@ const routes: Routes = [
     RouterModule.forChild(routes),
   ]
 })
-export class ContactModule { }
+export default class ContactModule { }
