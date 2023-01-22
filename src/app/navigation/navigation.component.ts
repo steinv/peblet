@@ -28,6 +28,7 @@ export class NavigationComponent {
   }
 
   public apps(): void {
-    // TODO
+    // TODO open modal with previously opened apps.
+    console.log(this.navigationService.openedApps());
   }
 }

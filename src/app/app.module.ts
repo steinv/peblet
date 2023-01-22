@@ -9,6 +9,8 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { StatusBarComponent } from './status-bar/status-bar.component';
 import { DatePipe } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+import { TranslocoRootModule } from './transloco-root.module';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { DatePipe } from '@angular/common';
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
+    HttpClientModule,
+    TranslocoRootModule,
   ],
   providers: [DatePipe],
   bootstrap: [AppComponent]
