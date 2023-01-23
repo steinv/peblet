@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ContactComponent } from './contact/contact.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { TranslocoModule } from '@ngneat/transloco';
+import { TranslocoModule, TRANSLOCO_SCOPE } from '@ngneat/transloco';
 
 const routes: Routes = [
   { path: '', component: ContactComponent },
@@ -18,6 +18,9 @@ const routes: Routes = [
     FontAwesomeModule,
     TranslocoModule,
     RouterModule.forChild(routes),
+  ],
+  providers: [
+    { provide: TRANSLOCO_SCOPE, useValue: 'contact' },
   ]
 })
 export default class ContactModule { }

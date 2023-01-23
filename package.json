@@ -23,6 +23,7 @@
     "@fortawesome/free-regular-svg-icons": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
     "@ngneat/transloco": "^4.2.2",
+    "@ngneat/transloco-persist-lang": "^4.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.4.1",
     "zone.js": "~0.12.0"

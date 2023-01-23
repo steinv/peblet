@@ -5,7 +5,7 @@ import { Router, NavigationEnd, ActivatedRoute } from '@angular/router'
 @Injectable({ providedIn: 'root' })
 export class NavigationService {
   private history: string[] = []
-  private apps = new Set<string>();
+  private apps = new Array<string>();
 
   constructor(
     private router: Router,
@@ -16,8 +16,7 @@ export class NavigationService {
         if(event.urlAfterRedirects === '/') {
           this.history = [];
         } else {
-          this.history.push(event.urlAfterRedirects);
-          this.apps.add(event.urlAfterRedirects)
+          this.pushApp(event.urlAfterRedirects);
         }
       }
     })
@@ -37,7 +36,13 @@ export class NavigationService {
     this.history = [];
   }
 
-  openedApps(): Set<string> {
+  openedApps(): Array<string> {
     return this.apps;
+  }
+
+  private pushApp(urlAfterRedirects: string): void {
+    this.history.push(urlAfterRedirects);
+    this.apps = this.apps.filter(a => a != urlAfterRedirects);
+    this.apps.push(urlAfterRedirects);
   }
 }

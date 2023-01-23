@@ -5,7 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { PortfolioListItemComponent } from './portfolio-list-item/portfolio-list-item.component';
 import { PortfolioProjectComponent } from './portfolio-project/portfolio-project.component';
 import { ProjecResolver } from './project.resolver';
-import { TranslocoModule } from '@ngneat/transloco';
+import { TranslocoModule, TRANSLOCO_SCOPE } from '@ngneat/transloco';
 
 const routes: Routes = [
   { path: '', component: PortfolioComponent },
@@ -24,7 +24,8 @@ const routes: Routes = [
     RouterModule.forChild(routes),
   ],
   providers: [
-    ProjecResolver
+    ProjecResolver,
+    { provide: TRANSLOCO_SCOPE, useValue: 'portfolio' },
   ]
 })
 export default class PortfolioModule { }

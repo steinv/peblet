@@ -1,6 +1,6 @@
 {
-    "settings": {
-        "language": "Langue",
-        "theme": "Thème"
-    }
+    "settings": "Configuration",
+    "portfolio": "Portefeuille",
+    "experience": "Expérience",
+    "contact": "Contact"
 }

@@ -1,6 +1,6 @@
 {
-    "settings": {
-        "language": "Taal",
-        "theme": "Thema"
-    }
+    "settings": "Instellingen",
+    "portfolio": "Portfolio",
+    "experience": "Ervaring",
+    "contact": "Contact"
 }

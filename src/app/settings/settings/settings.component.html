@@ -1,5 +1,5 @@
-<ng-container *transloco="let $; read: 'settings'">
-    <h2 class="p-4 text-lg font-semibold text-slate-900">{{$('language')}}</h2>
+<ng-container *transloco="let $">
+    <h2 class="p-4 text-lg font-semibold text-slate-900">{{$('settings.language')}}</h2>
     <form [formGroup]="languageForm" class="divide-y divide-slate-100">
         <label for="en" class="p-4 flex flex-row justify-between cursor-pointer">
             English
@@ -15,7 +15,7 @@
         </label>
     </form>
 
-    <h2 class="p-4 text-lg font-semibold text-slate-900">{{$('theme')}}</h2>
+    <h2 class="p-4 text-lg font-semibold text-slate-900">{{$('settings.theme')}}</h2>
     <div class="p-4">
         <label class="relative inline-flex items-center cursor-pointer">
             <input type="checkbox" value="" class="sr-only peer">
