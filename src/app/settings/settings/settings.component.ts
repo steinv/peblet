@@ -20,7 +20,7 @@ export class SettingsComponent implements OnInit {
 
   ngOnInit(): void {
     this.languageForm.get('language')?.valueChanges.subscribe(
-      (language) => { if (!!language) this.translocoService.setActiveLang(language)}
+      (language) => { if (!!language) this.translocoService.setActiveLang(language) }
     );
   }
 
