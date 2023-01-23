@@ -1,6 +1,6 @@
 [
     {
-        "image": "../../assets/peblet.png",
+        "image": "../../assets/peblet-min.png",
         "name": "Peblet",
         "technology": [
             "Angular Website",
