@@ -6,7 +6,7 @@
             "Angular Website",
             "Tailwind css"
         ],
-        "description": "Angular website for Peblet BV to provide contact details and demonstrate portfolio.",
+        "description":  "portfolio.peblet.description",
         "website": "https://peblet.be",
         "source": "https://github.com/steinv/peblet"
     },
@@ -20,7 +20,7 @@
             "Twilio",
             "Cloud functions"
         ],
-        "description": "Native app Android/iOS in Flutter to use Twilio virtual phone number for midwife practice.",
+        "description": "portfolio.phoneApp.description",
         "source": "https://github.com/steinv/infans_phone"
     },
     {
@@ -33,7 +33,7 @@
             "Twilio",
             "Cloud functions"
         ],
-        "description": "Angular website for Infans midwifery. Providing professional services and managing internal business-flows.",
+        "description": "portfolio.infans.description",
         "website": "https://infans.be"
     },
     {
@@ -47,7 +47,7 @@
             "Netlify",
             "Cloud scheduler"
         ],
-        "description": "Angular + Spring Native application to monitor electricity usage through a Zappi installation.",
+        "description": "portfolio.myenergi.description",
         "website": "https://www.npmjs.com/package/@steinv/filippine",
         "source": "https://github.com/steinv/filippine"
     },
@@ -57,7 +57,7 @@
         "technology": [
             "Npm Angular library"
         ],
-        "description": "Angular library to easily create dialogs with the possibility to provide input and output",
+        "description": "portfolio.ngxdialog.description",
         "website": "https://www.npmjs.com/package/@steinv/ngx-dialog",
         "source": "https://github.com/steinv/ngx-dialog"
     },
@@ -67,7 +67,7 @@
         "technology": [
             "Npm Angular library"
         ],
-        "description": "Angular library to  generate a filippine puzzle game",
+        "description": "portfolio.filippine.description",
         "website": "https://www.npmjs.com/package/@steinv/filippine",
         "source": "https://github.com/steinv/filippine"
     }

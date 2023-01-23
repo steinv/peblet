@@ -28,7 +28,9 @@ export class NavigationComponent {
   }
 
   public apps(): void {
-    // TODO open modal with previously opened apps.
+    if (this.navigationService.openedApps().length > 0) {
+      // TODO open process overlay
+    }
     console.log(this.navigationService.openedApps());
   }
 }

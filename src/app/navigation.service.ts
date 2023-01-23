@@ -39,10 +39,16 @@ export class NavigationService {
   openedApps(): Array<string> {
     return this.apps;
   }
+  
+  closeAllApps(): void {
+    this.apps = [];
+  }
 
   private pushApp(urlAfterRedirects: string): void {
     this.history.push(urlAfterRedirects);
-    this.apps = this.apps.filter(a => a != urlAfterRedirects);
+    
+    const firstPart = '/' + urlAfterRedirects.split('/')[1];
+    this.apps = this.apps.filter(a => !a.startsWith(firstPart));
     this.apps.push(urlAfterRedirects);
   }
 }

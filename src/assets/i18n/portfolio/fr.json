@@ -1,6 +1,26 @@
 {
-    "settings": {
-        "language": "Langue",
-        "theme": "Thème"
-    }
+    "peblet": {
+        "description": "Site Web en Angular de Peblet BV pour fournir mes coordonnées et démontrer le portefeuille."
+    },
+    "infans": {
+        "description": "Site Web en Angular pour Infans obstétrique. Fournir des services professionnels et gérer les business-flows internes."
+    },
+    "phoneApp": {
+        "description": "Native app Android/iOS en Flutter pour utiliser Twilio numéro de téléphone virtuel pour Infans obstétrique."
+    },    
+    "myenergi": {
+        "description": "Angular + Spring Native application pour surveiller la consommation d'électricité grâce à une installation Zappi."
+    },
+    "ngxdialog": {
+        "description": "Angular library pour créer facilement des dialogues avec la possibilité de fournir une entrée et une sortie."
+    },
+    "filippine": {
+        "description": "Angular library pour générer un jeu de puzzle 'filippin'"
+    },
+    "opensourcePrefix": "C'est open-source, jetez un oeil ",
+    "opensourceLink": "ici",
+    "opensourceSuffix": ".",
+    "websitePrefix": "Aller sur le ",
+    "websiteLink": "site web",
+    "websiteSuffix": "."
 }

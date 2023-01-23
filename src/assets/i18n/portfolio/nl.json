@@ -1,6 +1,26 @@
 {
-    "settings": {
-        "language": "Taal",
-        "theme": "Thema"
-    }
+    "peblet": {
+        "description": "Angular website voor Peblet BV om contactgegevens en portfolio te delen."
+    },
+    "infans": {
+        "description": "Angular website voor Infans vroedvrouwenpraktijk. Aanbieden van professionele services en managen van interne business-flows."
+    },
+    "phoneApp": {
+        "description": "Native app Android/iOS in Flutter om een virtueel telefoonnummer van Twilio te gebruiken in de Infans vroedvrouwenpraktijk."
+    },
+    "myenergi": {
+        "description": "Angular + Spring Native applicatie om elektriciteitsverbruik te monitoren aan de hand van een Zappi installatie."
+    },
+    "ngxdialog": {
+        "description": "Angular library om eenvoudig dialoogvensters te openen met indien gewenest ook input en output."
+    },
+    "filippine": {
+        "description": "Angular library voor een filippinepuzzelspel te genereren."
+    },
+    "opensourcePrefix": "Dit project is open-source, kijk ",
+    "opensourceLink": "hier",
+    "opensourceSuffix": " eens rond.",
+    "websitePrefix": "Ga naar de ",
+    "websiteLink": "website",
+    "websiteSuffix": "."
 }

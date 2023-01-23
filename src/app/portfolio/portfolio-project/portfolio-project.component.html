@@ -1,15 +1,17 @@
-<section class="p-4">
-    <img class="mx-auto max-h-36" [src]="project.image" [alt]="project.name" />
-    <h2 class="text-xl my-3">{{project.name}}</h2>
-    <p>
-        {{project.description}}
-    </p>
-    <ul class="pl-4 mt-5 list-disc">
-        <li *ngIf="project.website">
-            Go to the <a class="text-blue-600 hover:underline" [href]="project.website">website</a>
-        </li>
-        <li *ngIf="project.source">
-            This is open-source, have a look <a class="text-blue-600 hover:underline" [href]="project.source">here</a>.
-        </li>
-    </ul>
-</section>
+<ng-container *transloco="let $">
+    <section class="p-4">
+        <img class="mx-auto max-h-36" [src]="project.image" [alt]="project.name" />
+        <h2 class="text-xl my-3">{{project.name}}</h2>
+        <p>
+            {{$(project.description)}}
+        </p>
+        <ul class="pl-4 mt-5 list-disc">
+            <li *ngIf="project.website">
+                {{$('portfolio.websitePrefix')}}<a class="text-blue-600 hover:underline" [href]="project.website">{{$('portfolio.websiteLink')}}</a>{{$('portfolio.websiteSuffix')}}
+            </li>
+            <li *ngIf="project.source">
+                {{$('portfolio.opensourcePrefix')}}<a class="text-blue-600 hover:underline" [href]="project.source">{{$('portfolio.opensourceLink')}}</a>{{$('portfolio.opensourceSuffix')}}
+            </li>
+        </ul>
+    </section>
+</ng-container>
