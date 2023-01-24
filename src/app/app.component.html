@@ -5,10 +5,10 @@
 />
 
 <div
-  class="peblet flex flex-col relative bg-cover bg-center self-center mx-auto w-96 h-5/6 rounded-lg"
-  [class.home-active]="router.isActive('/', true)"   
+  class="peblet bg-slate-100 dark:bg-slate-800 border-x-8 border-b-8 border-t-24 rounded-3xl border-black flex flex-col relative bg-cover bg-center self-center mx-auto w-96 h-5/6 text-slate-500 dark:text-slate-400"
+  [ngClass]="{'bg-peblet-light dark:bg-peblet-dark bg-center bg-cover dark:bg-left' : router.isActive('/', true)}"
 >
-  <peblet-status-bar></peblet-status-bar>  
+  <peblet-status-bar></peblet-status-bar>
   <router-outlet></router-outlet>
   <peblet-navigation></peblet-navigation>
 </div>

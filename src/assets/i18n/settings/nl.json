@@ -1,4 +1,6 @@
 {
     "language": "Taal",
-    "theme": "Thema"
+    "theme": "Thema",
+    "dark": "Donker thema",
+    "light": "Licht thema"
 }

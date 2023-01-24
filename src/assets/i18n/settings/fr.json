@@ -1,4 +1,6 @@
 {
     "language": "Langue",
-    "theme": "Thème"
+    "theme": "Thème",
+    "dark": "Dark mode",
+    "light": "Light mode"
 }
