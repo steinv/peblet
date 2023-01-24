@@ -2,15 +2,6 @@
     display: flex;
     width: 100vw;
     height: 100vh;
-
-    $randomStripColor: hsla(0, 0%, 100%, .1);
-    background: burlywood;
-    background-image: 
-      linear-gradient(90deg, $randomStripColor 3px, transparent 0),
-      linear-gradient(90deg, $randomStripColor 11px, transparent 0),
-      linear-gradient(90deg, $randomStripColor 23px, transparent 0);
-    background-size: 11px 100%, 21px 100%, 33px 100%;
-    background-clip: content-box;
 }
 
 .peblet {

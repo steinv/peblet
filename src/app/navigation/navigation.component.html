@@ -1,11 +1,11 @@
 <div class="flex flex-row justify-around p-1 text-lg text-black dark:text-white">
-    <button class="px-2" (click)="back()">
+    <button class="px-2" (click)="back()" aria-label="back">
         <fa-icon [icon]="faCaretLeft"></fa-icon>
     </button>
-    <button class="px-2" (click)="home()">
+    <button class="px-2" (click)="home()" aria-label="home">
         <fa-icon [icon]="faCircle"></fa-icon>
     </button>
-    <button class="px-2" (click)="apps()">
+    <button class="px-2" (click)="apps()" aria-label="tabs">
         <fa-icon [icon]="faSquare"></fa-icon>
     </button>
 </div>
