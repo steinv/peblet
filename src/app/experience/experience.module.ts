@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ExperienceComponent } from './experience/experience.component';
 import { RouterModule, Routes } from '@angular/router';
 import { TranslocoModule, TRANSLOCO_SCOPE } from '@ngneat/transloco';
+import { ExperienceListItemComponent } from './experience-list-item/experience-list-item.component';
 
 const routes: Routes = [
   { path: '', component: ExperienceComponent },
@@ -10,7 +11,8 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [
-    ExperienceComponent
+    ExperienceComponent,
+    ExperienceListItemComponent
   ],
   imports: [
     CommonModule,

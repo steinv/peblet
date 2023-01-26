@@ -1,0 +1,11 @@
+<article class="p-4 flex flex-row">
+    <img *ngIf="image" [src]="image" [alt]="company" class="w-12 h-fit object-contain" loading="lazy" />
+    <div class="flex flex-col ml-4">
+        <h3 class="font-semibold text-slate-900 dark:text-white truncate">{{company}}</h3>
+        <h4 class="text-slate-900 dark:text-white truncate">{{role}}</h4>
+        <em>
+            {{from | date: 'MMMM YYYY'}} - {{ until ? (until | date: 'MMMM YYYY'): 'current'}}
+        </em>
+        <ng-content></ng-content>
+    </div>
+</article>

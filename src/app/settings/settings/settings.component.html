@@ -1,6 +1,6 @@
 <ng-container *transloco="let $">
     <h2 class="p-4 text-lg font-semibold text-slate-900 dark:text-white">{{$('settings.language')}}</h2>
-    <form [formGroup]="languageForm" class="divide-y divide-slate-100 dark:divide-slate-400">
+    <form [formGroup]="languageForm">
         <label for="en" class="p-4 flex flex-row justify-between cursor-pointer">
             English
             <input class="w-4" id="en" value="en" type="radio" name="language" formControlName="language" />

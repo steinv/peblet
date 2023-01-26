@@ -1,10 +1,8 @@
 <ng-container *transloco="let $">
     <div class="p-4 grid grid-cols-4 gap-4 auto-cols-fr">
-        <peblet-app-widget [name]="$('portfolio')" icon="/assets/portfolio.png" [routerLink]="['/', 'portfolio']"></peblet-app-widget>
-        <peblet-app-widget [name]="$('contact')" icon="/assets/contacts.png" [routerLink]="['/', 'contact']"></peblet-app-widget>
-        <!-- TODO add werkeraringen 
-            <peblet-app-widget [name]="$('experience')" icon="/assets/experience.png" [routerLink]="['/', 'experience']"></peblet-app-widget>
-        -->
-        <peblet-app-widget [name]="$('settings')" icon="/assets/settings.png" [routerLink]="['/', 'settings']"></peblet-app-widget>
+        <peblet-app-widget [name]="$('portfolio')" [icon]="faFolderOpen" bgColor="#2481ce" [routerLink]="['/', 'portfolio']"></peblet-app-widget>
+        <peblet-app-widget [name]="$('experience')" [icon]="faBriefcase" bgColor="#154c79" [routerLink]="['/', 'experience']"></peblet-app-widget>
+        <peblet-app-widget [name]="$('contact')" [icon]="faAddressCard" bgColor="#0b2d39" [routerLink]="['/', 'contact']"></peblet-app-widget>
+        <peblet-app-widget [name]="$('settings')" [icon]="faGear" bgColor="#abb" [routerLink]="['/', 'settings']"></peblet-app-widget>
     </div>
 </ng-container>

@@ -1,4 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
+import { faAndroid } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'peblet-app-widget',
@@ -14,7 +16,9 @@ export class AppWidgetComponent {
   @Input()
   public name: string = '';
 
-  // TODO type of icon? + default value
   @Input()
-  public icon: string = '/assets/android.png';
+  public icon: IconProp = faAndroid;
+
+  @Input()
+  public bgColor: string = '';
 }
