@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /.well-known/acme-challenge
+Sitemap: https://peblet.be/sitemap.xml
