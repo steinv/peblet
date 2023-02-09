@@ -1,0 +1,39 @@
+on:
+  push:
+    branches: [ "master" ]
+  workflow_dispatch:
+
+env:
+  NODE_VERSION: '18.x'
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-deploy:
+      runs-on: ubuntu-latest
+      steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Set up angular-cli and firebase-tools
+        run: |
+          npm install -g @angular/cli
+          npm install -g firebase-tools
+
+      - name: Build application
+        run: | 
+          npm ci --legacy-peer-deps
+          ng build --configuration production
+
+      - name: Deploy application
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASETOKEN }}
+        run: |
+          firebase deploy --only hosting:peblet --non-interactive --token ${{ env.FIREBASE_TOKEN }}
