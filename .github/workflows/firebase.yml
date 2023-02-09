@@ -32,8 +32,11 @@ jobs:
           npm ci --legacy-peer-deps
           ng build --configuration production
 
+      - name: 'Authenticate to Google Cloud'
+        uses: 'google-github-actions/auth@v1'
+        with:
+          credentials_json: '${{ secrets.GOOGLE_CREDENTIALS }}'
+
       - name: Deploy application
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASETOKEN }}
         run: |
-          firebase deploy --only hosting:peblet --non-interactive --token ${{ env.FIREBASE_TOKEN }}
+          firebase deploy --only hosting:peblet --non-interactive
