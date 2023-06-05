@@ -19,6 +19,10 @@ export class TranslocoHttpLoader implements TranslocoLoader {
   }
 }
 
+/**
+ * TODO replace transloco with angular i18n + firebase rewrites:
+ * https://stackoverflow.com/questions/68144322/firebase-i18n-rewrite-language-override-cookie-is-ignored
+ */
 @NgModule({
   exports: [ TranslocoModule ],
   providers: [
