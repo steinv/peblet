@@ -1,10 +1,10 @@
 import { Injectable } from "@angular/core";
-import { ActivatedRouteSnapshot, Resolve } from "@angular/router";
+import { ActivatedRouteSnapshot } from "@angular/router";
 import { EMPTY, Observable } from "rxjs";
 import projects from './projects.json';
 
 @Injectable()
-export class ProjecResolver implements Resolve<Project> {
+export class ProjecResolver  {
 
     public resolve(route: ActivatedRouteSnapshot): Observable<Project> | Project {
         const projectName = route.params['project'];
