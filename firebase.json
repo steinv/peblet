@@ -1,7 +1,7 @@
 {
   "hosting": {
     "site": "peblet",
-    "public": "dist/peblet",
+    "public": "dist/peblet/browser",
     "ignore": [
       "firebase.json",
       "**/.*",
