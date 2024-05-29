@@ -11,6 +11,18 @@
         "source": "https://github.com/steinv/peblet"
     },
     {
+        "image": "../../assets/bump2bee.jpg",
+        "name": "Bump2Bee",
+        "technology": [
+            "Flutter app",
+            "Angular Website",
+            "Algolia",
+            "Cloud functions"
+        ],
+        "description": "portfolio.bump2bee.description",
+        "website": "https://bump2bee.be"
+    },
+    {
         "image": "../../assets/flutter.png",
         "name": "Flutter Phone App",
         "technology": [

@@ -2,6 +2,9 @@
     "peblet": {
         "description": "Angular website voor Peblet BV om contactgegevens en portfolio te delen."
     },
+    "bump2bee": {
+        "description": "Flutter applicatie voor jonge gezinnen of in verwachting met informatie artikels geschreven door professionele vroedvrouwen."
+    },
     "infans": {
         "description": "Angular website voor Infans vroedvrouwenpraktijk. Aanbieden van professionele services en managen van interne business-flows."
     },
