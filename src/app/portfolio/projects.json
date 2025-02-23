@@ -1,5 +1,17 @@
 [
     {
+        "image": "../../assets/contraction-timer-app.webp",
+        "name": "Contraction Timer App",
+        "technology": [
+            "Flutter app",
+            "iOS",
+            "Android"
+        ],
+        "description":  "portfolio.contractiontimer.description",
+        "website": "https://onelink.to/f69rn4",
+        "source": "https://github.com/steinv/contraction-timer"
+    },
+    {
         "image": "../../assets/peblet-min.png",
         "name": "Peblet",
         "technology": [
@@ -19,8 +31,7 @@
             "Algolia",
             "Cloud functions"
         ],
-        "description": "portfolio.bump2bee.description",
-        "website": "https://bump2bee.be"
+        "description": "portfolio.bump2bee.description"
     },
     {
         "image": "../../assets/flutter.png",

@@ -20,6 +20,9 @@
     "filippine": {
         "description": "Angular library to  generate a filippine puzzle game"
     },
+    "contractiontimer": {
+        "description": "Flutter application to track contractions during childbirth. Available on iOS and Android."
+    },
     "opensourcePrefix": "This is open-source, have a look ",
     "opensourceLink": "here",
     "opensourceSuffix": ".",

@@ -17,6 +17,9 @@
     "filippine": {
         "description": "Angular library pour générer un jeu de puzzle 'filippin'"
     },
+    "contractiontimer": {
+        "description": "Application Flutter pour suivre les contractions pendant l'accouchement. Disponible sur iOS et Android."
+    },
     "opensourcePrefix": "C'est open-source, jetez un oeil ",
     "opensourceLink": "ici",
     "opensourceSuffix": ".",

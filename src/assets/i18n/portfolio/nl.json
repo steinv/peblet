@@ -20,6 +20,9 @@
     "filippine": {
         "description": "Angular library voor een filippinepuzzelspel te genereren."
     },
+    "contractiontimer": {
+        "description": "Flutter applicatie om weeën te volgen tijdens de bevalling. Beschikbaar op iOS en Android."
+    },
     "opensourcePrefix": "Dit project is open-source, kijk ",
     "opensourceLink": "hier",
     "opensourceSuffix": " eens rond.",
