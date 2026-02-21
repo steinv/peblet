@@ -1,32 +1,35 @@
 {
-    "peblet": {
-        "description": "Angular website voor Peblet BV om contactgegevens en portfolio te delen."
-    },
-    "bump2bee": {
-        "description": "Flutter applicatie voor jonge gezinnen of in verwachting met informatie artikels geschreven door professionele vroedvrouwen."
-    },
-    "infans": {
-        "description": "Angular website voor Infans vroedvrouwenpraktijk. Aanbieden van professionele services en managen van interne business-flows."
-    },
-    "phoneApp": {
-        "description": "Native app Android/iOS in Flutter om een virtueel telefoonnummer van Twilio te gebruiken in de Infans vroedvrouwenpraktijk."
-    },
-    "myenergi": {
-        "description": "Angular + Spring Native applicatie om elektriciteitsverbruik te monitoren aan de hand van een Zappi installatie."
-    },
-    "ngxdialog": {
-        "description": "Angular library om eenvoudig dialoogvensters te openen met indien gewenest ook input en output."
-    },
-    "filippine": {
-        "description": "Angular library voor een filippinepuzzelspel te genereren."
-    },
-    "contractiontimer": {
-        "description": "Flutter applicatie om weeën te volgen tijdens de bevalling. Beschikbaar op iOS en Android."
-    },
-    "opensourcePrefix": "Dit project is open-source, kijk ",
-    "opensourceLink": "hier",
-    "opensourceSuffix": " eens rond.",
-    "websitePrefix": "Ga naar de ",
-    "websiteLink": "website",
-    "websiteSuffix": "."
+  "peblet": {
+    "description": "Angular website voor Peblet BV om contactgegevens en portfolio te delen."
+  },
+  "bump2bee": {
+    "description": "Flutter applicatie voor jonge gezinnen of in verwachting met informatie artikels geschreven door professionele vroedvrouwen."
+  },
+  "speelweelde": {
+    "description": "Angular server-side rendering website voor Speelweelde BV om hun VR-workshops, evenementen of feestjes te organizeren."
+  },
+  "infans": {
+    "description": "Angular website voor Infans vroedvrouwenpraktijk. Aanbieden van professionele services en managen van interne business-flows."
+  },
+  "phoneApp": {
+    "description": "Native app Android/iOS in Flutter om een virtueel telefoonnummer van Twilio te gebruiken in de Infans vroedvrouwenpraktijk."
+  },
+  "myenergi": {
+    "description": "Angular + Spring Native applicatie om elektriciteitsverbruik te monitoren aan de hand van een Zappi installatie."
+  },
+  "ngxdialog": {
+    "description": "Angular library om eenvoudig dialoogvensters te openen met indien gewenest ook input en output."
+  },
+  "filippine": {
+    "description": "Angular library voor een filippinepuzzelspel te genereren."
+  },
+  "contractiontimer": {
+    "description": "Flutter applicatie om weeën te volgen tijdens de bevalling. Beschikbaar op iOS en Android."
+  },
+  "opensourcePrefix": "Dit project is open-source, kijk ",
+  "opensourceLink": "hier",
+  "opensourceSuffix": " eens rond.",
+  "websitePrefix": "Ga naar de ",
+  "websiteLink": "website",
+  "websiteSuffix": "."
 }

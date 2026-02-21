@@ -1,97 +1,94 @@
 [
-    {
-        "image": "../../assets/contraction-timer-app.webp",
-        "name": "Contraction Timer App",
-        "technology": [
-            "Flutter app",
-            "iOS",
-            "Android"
-        ],
-        "description":  "portfolio.contractiontimer.description",
-        "website": "https://onelink.to/f69rn4",
-        "source": "https://github.com/steinv/contraction-timer"
-    },
-    {
-        "image": "../../assets/peblet-min.png",
-        "name": "Peblet",
-        "technology": [
-            "Angular Website",
-            "Tailwind css"
-        ],
-        "description":  "portfolio.peblet.description",
-        "website": "https://peblet.be",
-        "source": "https://github.com/steinv/peblet"
-    },
-    {
-        "image": "../../assets/bump2bee.jpg",
-        "name": "Bump2Bee",
-        "technology": [
-            "Flutter app",
-            "Angular Website",
-            "Algolia",
-            "Cloud functions"
-        ],
-        "description": "portfolio.bump2bee.description"
-    },
-    {
-        "image": "../../assets/flutter.png",
-        "name": "Flutter Phone App",
-        "technology": [
-            "Flutter",
-            "Firebase",
-            "Firebase Cloud Messaging",
-            "Twilio",
-            "Cloud functions"
-        ],
-        "description": "portfolio.phoneApp.description",
-        "source": "https://github.com/steinv/infans_phone"
-    },
-    {
-        "image": "../../assets/logo-infans.png",
-        "name": "Infans",
-        "technology": [
-            "Angular Website",
-            "Materialize css",
-            "Firebase",
-            "Twilio",
-            "Cloud functions"
-        ],
-        "description": "portfolio.infans.description",
-        "website": "https://infans.be"
-    },
-    {
-        "image": "../../assets/myenergi.png",
-        "name": "alternative myenergi-app",
-        "technology": [
-            "Angular",
-            "Java",
-            "Spring Native",
-            "Render",
-            "Netlify",
-            "Cloud scheduler"
-        ],
-        "description": "portfolio.myenergi.description",
-        "website": "https://www.npmjs.com/package/@steinv/filippine",
-        "source": "https://github.com/steinv/filippine"
-    },
-    {
-        "image": "../../assets/npm.png",
-        "name": "steinv/ngx-dialog",
-        "technology": [
-            "Npm Angular library"
-        ],
-        "description": "portfolio.ngxdialog.description",
-        "website": "https://www.npmjs.com/package/@steinv/ngx-dialog",
-        "source": "https://github.com/steinv/ngx-dialog"
-    },
-    {
-        "image": "../../assets/npm.png",
-        "name": "steinv/filippine",
-        "technology": [
-            "Npm Angular library"
-        ],
-        "description": "portfolio.filippine.description",
-        "website": "https://www.npmjs.com/package/@steinv/filippine",
-        "source": "https://github.com/steinv/filippine"
-    }
+  {
+    "image": "../../assets/pixel.webp",
+    "name": "Speelweelde",
+    "technology": ["Angular SSR", "Firebase Apphosting"],
+    "description": "portfolio.speelweelde.description",
+    "website": "https://speelweelde.be"
+  },
+
+  {
+    "image": "../../assets/contraction-timer-app.webp",
+    "name": "Contraction Timer App",
+    "technology": ["Flutter app", "iOS", "Android"],
+    "description": "portfolio.contractiontimer.description",
+    "website": "https://onelink.to/f69rn4",
+    "source": "https://github.com/steinv/contraction-timer"
+  },
+  {
+    "image": "../../assets/peblet-min.png",
+    "name": "Peblet",
+    "technology": ["Angular Website", "Tailwind css"],
+    "description": "portfolio.peblet.description",
+    "website": "https://peblet.be",
+    "source": "https://github.com/steinv/peblet"
+  },
+  {
+    "image": "../../assets/bump2bee.jpg",
+    "name": "Bump2Bee",
+    "technology": [
+      "Flutter app",
+      "Angular Website",
+      "Algolia",
+      "Cloud functions"
+    ],
+    "description": "portfolio.bump2bee.description"
+  },
+  {
+    "image": "../../assets/flutter.png",
+    "name": "Flutter Phone App",
+    "technology": [
+      "Flutter",
+      "Firebase",
+      "Firebase Cloud Messaging",
+      "Twilio",
+      "Cloud functions"
+    ],
+    "description": "portfolio.phoneApp.description",
+    "source": "https://github.com/steinv/infans_phone"
+  },
+  {
+    "image": "../../assets/logo-infans.png",
+    "name": "Infans",
+    "technology": [
+      "Angular Website",
+      "Materialize css",
+      "Firebase",
+      "Twilio",
+      "Cloud functions"
+    ],
+    "description": "portfolio.infans.description",
+    "website": "https://infans.be"
+  },
+  {
+    "image": "../../assets/myenergi.png",
+    "name": "alternative myenergi-app",
+    "technology": [
+      "Angular",
+      "Java",
+      "Spring Native",
+      "Render",
+      "Netlify",
+      "Cloud scheduler"
+    ],
+    "description": "portfolio.myenergi.description",
+    "website": "https://www.npmjs.com/package/@steinv/filippine",
+    "source": "https://github.com/steinv/filippine"
+  },
+  {
+    "image": "../../assets/npm.png",
+    "name": "steinv/ngx-dialog",
+    "technology": ["Npm Angular library"],
+    "description": "portfolio.ngxdialog.description",
+    "website": "https://www.npmjs.com/package/@steinv/ngx-dialog",
+    "source": "https://github.com/steinv/ngx-dialog"
+  },
+  {
+    "image": "../../assets/npm.png",
+    "name": "steinv/filippine",
+    "technology": ["Npm Angular library"],
+    "description": "portfolio.filippine.description",
+    "website": "https://www.npmjs.com/package/@steinv/filippine",
+    "source": "https://github.com/steinv/filippine"
+  }
 ]
