@@ -53,7 +53,7 @@ export class NavigationService {
   }
 
   closeAllApps(): void {
-    this.apps = [];
+    this.apps = this.apps.filter(a => a === this.router.url);
     this.closeTabs();
   }
 
