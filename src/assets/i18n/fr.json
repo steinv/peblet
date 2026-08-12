@@ -2,5 +2,7 @@
     "settings": "Configuration",
     "portfolio": "Portefeuille",
     "experience": "Expérience",
-    "contact": "Contact"
+    "contact": "Contact",
+    "clearAll": "Tout effacer",
+    "noRecentApps": "Aucune application récente"
 }

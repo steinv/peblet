@@ -28,9 +28,6 @@ export class NavigationComponent {
   }
 
   public apps(): void {
-    if (this.navigationService.openedApps().length > 0) {
-      // TODO open process overlay
-    }
-    console.log(this.navigationService.openedApps());
+    this.navigationService.toggleTabs();
   }
 }

@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { faAddressCard, faBriefcase, faFolderOpen, faGear } from '@fortawesome/free-solid-svg-icons';
+import { AppDefinition, AppRegistryService } from '../app-registry.service';
 
 @Component({
   selector: 'peblet-home-screen',
@@ -12,8 +12,10 @@ import { faAddressCard, faBriefcase, faFolderOpen, faGear } from '@fortawesome/f
  * It has apps, a background, ...
  */
 export class HomeScreenComponent {
-  faFolderOpen = faFolderOpen;
-  faBriefcase = faBriefcase;
-  faGear = faGear;
-  faAddressCard = faAddressCard;
+
+  public readonly apps: AppDefinition[];
+
+  constructor(appRegistry: AppRegistryService) {
+    this.apps = appRegistry.getApps();
+  }
 }

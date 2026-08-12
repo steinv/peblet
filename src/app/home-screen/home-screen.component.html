@@ -1,8 +1,11 @@
 <ng-container *transloco="let $">
     <div class="p-4 grid grid-cols-4 gap-4 auto-cols-fr">
-        <peblet-app-widget [name]="$('portfolio')" [icon]="faFolderOpen" bgColor="#2481ce" [routerLink]="['/', 'portfolio']"></peblet-app-widget>
-        <peblet-app-widget [name]="$('experience')" [icon]="faBriefcase" bgColor="#154c79" [routerLink]="['/', 'experience']"></peblet-app-widget>
-        <peblet-app-widget [name]="$('contact')" [icon]="faAddressCard" bgColor="#0b2d39" [routerLink]="['/', 'contact']"></peblet-app-widget>
-        <peblet-app-widget [name]="$('settings')" [icon]="faGear" bgColor="#abb" [routerLink]="['/', 'settings']"></peblet-app-widget>
+        <peblet-app-widget
+            *ngFor="let app of apps"
+            [name]="$(app.name)"
+            [icon]="app.icon"
+            [bgColor]="app.bgColor"
+            [routerLink]="[app.path]"
+        ></peblet-app-widget>
     </div>
 </ng-container>

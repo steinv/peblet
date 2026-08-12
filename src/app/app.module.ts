@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { HomeScreenComponent } from './home-screen/home-screen.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { StatusBarComponent } from './status-bar/status-bar.component';
+import { TabsOverviewComponent } from './tabs-overview/tabs-overview.component';
 import { TranslocoRootModule } from './transloco-root.module';
 
 @NgModule({
@@ -20,6 +21,7 @@ import { TranslocoRootModule } from './transloco-root.module';
         AppWidgetComponent,
         NavigationComponent,
         StatusBarComponent,
+        TabsOverviewComponent,
     ],
     bootstrap: [AppComponent],
     imports: [

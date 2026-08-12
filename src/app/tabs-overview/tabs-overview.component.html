@@ -1,0 +1,32 @@
+<ng-container *transloco="let $">
+    <div
+        *ngIf="navigationService.tabsOpen$ | async"
+        class="absolute inset-0 z-10 flex flex-col rounded-3xl bg-slate-200/95 dark:bg-slate-900/95 backdrop-blur-sm text-black dark:text-white"
+    >
+        <div class="flex justify-end p-2">
+            <button
+                type="button"
+                class="px-2 text-sm underline disabled:opacity-40 disabled:no-underline"
+                [disabled]="previews.length === 0"
+                (click)="clearAll()"
+            >{{ $('clearAll') }}</button>
+        </div>
+
+        <div class="flex-1 overflow-y-auto flex flex-col items-center gap-4 p-4 pt-0">
+            <button
+                *ngFor="let preview of previews"
+                type="button"
+                class="w-full rounded-2xl border-2 border-slate-300 dark:border-slate-600 bg-white/50 dark:bg-black/20 py-4 shrink-0"
+                (click)="open(preview.url)"
+            >
+                <peblet-app-widget
+                    [name]="$(preview.name)"
+                    [icon]="preview.icon"
+                    [bgColor]="preview.bgColor"
+                ></peblet-app-widget>
+            </button>
+
+            <p *ngIf="previews.length === 0" class="m-auto text-sm">{{ $('noRecentApps') }}</p>
+        </div>
+    </div>
+</ng-container>

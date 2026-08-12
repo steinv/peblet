@@ -1,11 +1,15 @@
 import { Injectable } from '@angular/core'
 import { Location } from '@angular/common'
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router'
+import { BehaviorSubject } from 'rxjs'
 
 @Injectable({ providedIn: 'root' })
 export class NavigationService {
   private history: string[] = []
   private apps = new Array<string>();
+  private readonly tabsOpenSubject = new BehaviorSubject<boolean>(false);
+
+  readonly tabsOpen$ = this.tabsOpenSubject.asObservable();
 
   constructor(
     private router: Router,
@@ -23,6 +27,10 @@ export class NavigationService {
   }
 
   back(url = '/'): void {
+    if (this.tabsOpenSubject.value) {
+      this.closeTabs();
+      return;
+    }
     this.history.pop()
     if (this.history.length > 0) {
       this.location.back()
@@ -32,6 +40,10 @@ export class NavigationService {
   }
 
   home(): void {
+    if (this.tabsOpenSubject.value) {
+      this.closeTabs();
+      return;
+    }
     this.router.navigate(['/']);
     this.history = [];
   }
@@ -39,9 +51,18 @@ export class NavigationService {
   openedApps(): Array<string> {
     return this.apps;
   }
-  
+
   closeAllApps(): void {
     this.apps = [];
+    this.closeTabs();
+  }
+
+  toggleTabs(): void {
+    this.tabsOpenSubject.next(!this.tabsOpenSubject.value);
+  }
+
+  closeTabs(): void {
+    this.tabsOpenSubject.next(false);
   }
 
   private pushApp(urlAfterRedirects: string): void {

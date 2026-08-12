@@ -2,5 +2,7 @@
     "settings": "Settings",
     "portfolio": "Portfolio",
     "experience": "Experience",
-    "contact": "Contact"
+    "contact": "Contact",
+    "clearAll": "Clear all",
+    "noRecentApps": "No recent apps"
 }
