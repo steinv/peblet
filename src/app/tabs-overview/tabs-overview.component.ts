@@ -38,14 +38,19 @@ export class TabsOverviewComponent {
     }
   }
 
+  /** Oldest first, so the newest app ends up stacked on top at the front of the pile. */
   public get previews(): TabPreview[] {
     return this.navigationService.openedApps()
-      .slice()
-      .reverse()
       .flatMap(url => {
         const app = this.appRegistry.findByUrl(url);
         return app ? [{ ...app, url }] : [];
       });
+  }
+
+  /** Each preview behind the front (newest) one shrinks by a small step, for a depth effect. */
+  public scaleFor(index: number, total: number): number {
+    const stepsFromFront = total - 1 - index;
+    return 1 - stepsFromFront * 0.05;
   }
 
   public componentFor(preview: TabPreview): Type<unknown> | null {

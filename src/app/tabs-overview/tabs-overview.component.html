@@ -18,7 +18,8 @@
                 *ngFor="let preview of previews; let i = index"
                 class="relative flex w-48 shrink-0 flex-col snap-start"
                 [style.marginLeft.px]="i === 0 ? 0 : -110"
-                [style.zIndex]="previews.length - i"
+                [style.zIndex]="i"
+                [style.transform]="'scale(' + scaleFor(i, previews.length) + ')'"
             >
                 <div class="mb-2 flex h-6 shrink-0 items-center gap-2 px-1">
                     <fa-icon [icon]="preview.icon" [style.color]="preview.bgColor"></fa-icon>
