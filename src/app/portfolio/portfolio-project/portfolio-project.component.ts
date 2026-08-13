@@ -4,10 +4,11 @@ import { take } from 'rxjs';
 import { Project } from '../project.resolver';
 
 @Component({
-  selector: 'peblet-portfolio-project',
-  templateUrl: './portfolio-project.component.html',
-  styleUrls: ['./portfolio-project.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'peblet-portfolio-project',
+    templateUrl: './portfolio-project.component.html',
+    styleUrls: ['./portfolio-project.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class PortfolioProjectComponent {
 

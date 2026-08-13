@@ -3,10 +3,11 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { faAndroid } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
-  selector: 'peblet-app-widget',
-  templateUrl: './app-widget.component.html',
-  styleUrls: ['./app-widget.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'peblet-app-widget',
+    templateUrl: './app-widget.component.html',
+    styleUrls: ['./app-widget.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 /**
  * This component uses input properties rather than content projection to have a consistent layout.

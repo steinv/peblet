@@ -1,10 +1,11 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'peblet-portfolio-list-item',
-  templateUrl: './portfolio-list-item.component.html',
-  styleUrls: ['./portfolio-list-item.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'peblet-portfolio-list-item',
+    templateUrl: './portfolio-list-item.component.html',
+    styleUrls: ['./portfolio-list-item.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class PortfolioListItemComponent {
 

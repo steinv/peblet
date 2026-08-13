@@ -9,10 +9,11 @@ export interface TabPreview extends AppDefinition {
 }
 
 @Component({
-  selector: 'peblet-tabs-overview',
-  templateUrl: './tabs-overview.component.html',
-  styleUrls: ['./tabs-overview.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'peblet-tabs-overview',
+    templateUrl: './tabs-overview.component.html',
+    styleUrls: ['./tabs-overview.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class TabsOverviewComponent {
 

@@ -3,10 +3,11 @@ import { faEnvelope, faBuilding, faMobilePhone } from '@fortawesome/free-solid-s
 import { faGithub, faLinkedin, faNpm } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
-  selector: 'peblet-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'peblet-contact',
+    templateUrl: './contact.component.html',
+    styleUrls: ['./contact.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class ContactComponent implements OnInit {
 

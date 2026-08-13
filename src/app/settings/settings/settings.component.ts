@@ -7,10 +7,11 @@ import { ThemeService } from 'src/app/theme.service';
 const CLASS_DARK = 'dark';
 
 @Component({
-  selector: 'peblet-settings',
-  templateUrl: './settings.component.html',
-  styleUrls: ['./settings.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'peblet-settings',
+    templateUrl: './settings.component.html',
+    styleUrls: ['./settings.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class SettingsComponent implements OnInit {
 

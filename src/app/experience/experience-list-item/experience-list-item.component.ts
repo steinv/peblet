@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'peblet-experience-list-item',
-  templateUrl: './experience-list-item.component.html',
-  styleUrls: ['./experience-list-item.component.scss']
+    selector: 'peblet-experience-list-item',
+    templateUrl: './experience-list-item.component.html',
+    styleUrls: ['./experience-list-item.component.scss'],
+    standalone: false
 })
 export class ExperienceListItemComponent {
   @Input()

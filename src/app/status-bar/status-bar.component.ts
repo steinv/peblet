@@ -4,10 +4,11 @@ import { map, Observable, shareReplay, Subject, takeUntil, tap, timer } from 'rx
 import { faWifi, faBatteryHalf } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-  selector: 'peblet-status-bar',
-  templateUrl: './status-bar.component.html',
-  styleUrls: ['./status-bar.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'peblet-status-bar',
+    templateUrl: './status-bar.component.html',
+    styleUrls: ['./status-bar.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class StatusBarComponent implements OnDestroy {
 
