@@ -1,11 +1,12 @@
 <ng-container *transloco="let $">
-    <div class="p-4 grid grid-cols-4 gap-4 auto-cols-fr">
-        <peblet-app-widget
-            *ngFor="let app of apps"
-            [name]="$(app.name)"
-            [icon]="app.icon"
-            [bgColor]="app.bgColor"
-            [routerLink]="[app.path]"
-        ></peblet-app-widget>
-    </div>
+  <div class="p-4 grid grid-cols-4 gap-4 auto-cols-fr">
+    @for (app of apps; track app) {
+      <peblet-app-widget
+        [name]="$(app.name)"
+        [icon]="app.icon"
+        [bgColor]="app.bgColor"
+        [routerLink]="[app.path]"
+      ></peblet-app-widget>
+    }
+  </div>
 </ng-container>

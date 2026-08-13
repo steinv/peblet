@@ -1,11 +1,13 @@
 <article class="p-4 flex flex-col">
-    <img *ngIf="image" [src]="image" [alt]="company" class="w-24 h-fit object-contain mb-8 mx-auto" loading="lazy" />
-    <div class="flex flex-col">
-        <h3 class="font-semibold text-slate-900 dark:text-white truncate">{{company}}</h3>
-        <h4 class="text-slate-900 dark:text-white truncate">{{role}}</h4>
-        <em>
-            {{from | date: 'MMMM YYYY'}} - {{ until ? (until | date: 'MMMM YYYY'): 'current'}}
-        </em>
-        <ng-content></ng-content>
-    </div>
+  @if (image) {
+    <img [src]="image" [alt]="company" class="w-24 h-fit object-contain mb-8 mx-auto" loading="lazy" />
+  }
+  <div class="flex flex-col">
+    <h3 class="font-semibold text-slate-900 dark:text-white truncate">{{company}}</h3>
+    <h4 class="text-slate-900 dark:text-white truncate">{{role}}</h4>
+    <em>
+      {{from | date: 'MMMM YYYY'}} - {{ until ? (until | date: 'MMMM YYYY'): 'current'}}
+    </em>
+    <ng-content></ng-content>
+  </div>
 </article>

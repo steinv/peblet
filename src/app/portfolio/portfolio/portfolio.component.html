@@ -1,9 +1,11 @@
 <div class="divide-y divide-slate-400">
-    <peblet-portfolio-list-item *ngFor="let project of projects"
-        [routerLink]="['/', 'portfolio', project.name]"
-        [image]="project.image" 
-        [name]="project.name" 
-        [technology]="project.technology">
+  @for (project of projects; track project) {
+    <peblet-portfolio-list-item
+      [routerLink]="['/', 'portfolio', project.name]"
+      [image]="project.image"
+      [name]="project.name"
+      [technology]="project.technology">
     </peblet-portfolio-list-item>
+  }
 
 </div>
