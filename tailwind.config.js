@@ -8,9 +8,9 @@ module.exports = {
         '24': '24px'
       },
       backgroundImage: {
-        'wood': "url('assets/wood-min.jpg')",
-        'peblet-light': "url('assets/bg.jpg')",
-        'peblet-dark': "url('assets/bg-dark.jpg')"
+        'wood': "url('/assets/wood-min.jpg')",
+        'peblet-light': "url('/assets/bg.jpg')",
+        'peblet-dark': "url('/assets/bg-dark.jpg')"
       }
     },
   },

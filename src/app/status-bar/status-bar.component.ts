@@ -17,7 +17,7 @@ export class StatusBarComponent implements OnDestroy {
   public faWifi = faWifi;
   public faBatteryHalf = faBatteryHalf;
 
-  constructor(readonly cdr: ChangeDetectorRef) { 
+  constructor(readonly cdr: ChangeDetectorRef) {
     this.time$ = timer(0, 1000).pipe(
       map(() => new Date()),
       tap(() => cdr.markForCheck()),
