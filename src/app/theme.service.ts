@@ -1,5 +1,5 @@
-import { DOCUMENT } from '@angular/common';
-import { Injectable, Inject, Renderer2, RendererFactory2 } from '@angular/core';
+
+import { Injectable, Inject, Renderer2, RendererFactory2, DOCUMENT } from '@angular/core';
 
 const CLASS_DARK = 'dark';
 const LOCAL_STORAGE_KEY_THEME = 'peblet_theme';
