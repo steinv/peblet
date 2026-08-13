@@ -6,7 +6,7 @@ import {
   TRANSLOCO_CONFIG,
   translocoConfig,
   TranslocoModule
-} from '@ngneat/transloco';
+} from '@jsverse/transloco';
 import { Injectable, isDevMode, NgModule } from '@angular/core';
 
 

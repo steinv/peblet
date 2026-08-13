@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, Injector, Type } from '@angular/core';
 import { Router } from '@angular/router';
-import { TRANSLOCO_SCOPE } from '@ngneat/transloco';
+import { TRANSLOCO_SCOPE } from '@jsverse/transloco';
 import { AppDefinition, AppRegistryService } from '../app-registry.service';
 import { NavigationService } from '../navigation.service';
 

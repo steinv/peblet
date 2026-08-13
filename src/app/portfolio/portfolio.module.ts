@@ -5,7 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { PortfolioListItemComponent } from './portfolio-list-item/portfolio-list-item.component';
 import { PortfolioProjectComponent } from './portfolio-project/portfolio-project.component';
 import { ProjecResolver } from './project.resolver';
-import { TranslocoModule, TRANSLOCO_SCOPE } from '@ngneat/transloco';
+import { TranslocoModule, TRANSLOCO_SCOPE } from '@jsverse/transloco';
 
 const routes: Routes = [
   { path: '', component: PortfolioComponent },
